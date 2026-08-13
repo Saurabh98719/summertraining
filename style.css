@@ -1,0 +1,90 @@
+body {
+    background-image : url('blur-bg.jpg');
+    background-size : cover;
+    background-position : center;
+    background-attachment : fixed; 
+    min-height : 100vh;
+    margin : 0;
+    display : flex;
+    justify-content : center;
+    align-items : center;   
+    padding : 10px;
+}
+.container {
+    background-color : rgba(255, 255, 255, 0.5);
+padding : 25px 30px;
+    max-width: 700px;
+    width : 100%;
+    border-radius : 5px;
+}
+.container .title {
+    font-size : 48px;
+    font-weight : 900;
+    position : relative;
+}
+
+.container form .user-details {
+    display : flex;
+    flex-wrap : wrap;
+    justify-content : space-between;
+    margin : 20px 0 12px 0;
+}
+form .user-details .input-box {
+    margin: 20px 0 12px 0;
+    width : calc(100% / 2 - 20px);
+}
+form .input-box span.details {
+    display : block;
+    font-weight : 500;
+    margin-bottom : 5px;
+}
+form .input-box input {
+    height : 45px;
+    width : 100%;
+    outline : none;
+    font-size : 16px;
+    border-radius : 5px;
+    padding-left : 15px;
+    border : 1px solid #ccc;
+    border-bottom-width : 2px;
+    transition : all 0.3s ease;
+}
+form .input-box input:focus,
+form .input-box input:valid {
+    border-color : #ca148b;
+}
+form.button {
+    height : 45px;
+    margin : 45px 0;
+}
+form .button input {
+    height : 100%;
+    width : 100%;
+    border : none;
+    color : #fff;
+    font-size : 18px;
+    font-weight : 500;
+    letter-spacing : 1px;
+    border-radius : 5px;
+    background-color : #359fa1;
+    cursor : pointer;
+    transition : all 0.3s ease;
+}
+form .button input:hover {
+    background-color : #55488a;
+}
+
+.message {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    min-height: 20px;
+}
+
+.message.success {
+    color: #0b7a0b;
+}
+
+.message.error {
+    color: #d10000;
+}
